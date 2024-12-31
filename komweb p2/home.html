@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita Modern</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-image {
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">NewsPortal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-image" style="background-image: url('/api/placeholder/1920/400')">
+        <div class="hero-overlay">
+            <div class="text-center">
+                <h1 class="display-4">Berita Terkini</h1>
+                <p class="lead">Sumber informasi terpercaya untuk Anda</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Article List -->
+            <div class="col-lg-8">
+                <!-- Article 1 -->
+                <article class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/news 1.jpg" class="img-fluid rounded-start" alt="Artikel 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title h3">Judul 1</h2>
+                                <p class="card-text">Lorem ipsum odor amet, consectetuer adipiscing elit. In congue ligula quisque vivamus duis fringilla massa...</p>
+                                <p class="card-text"><small class="text-muted"><i class="fas fa-clock me-1"></i>3 menit yang lalu</small></p>
+                                <a href="/berita 1.html" class="btn btn-primary">Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/news 2.jpg" class="img-fluid rounded-start" alt="Artikel 2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title h3">Judul 2</h2>
+                                <p class="card-text">Lorem ipsum odor amet, consectetuer adipiscing elit. Aenim vivamus sagittis finibus nostra nibh ullamcorper proin...</p>
+                                <p class="card-text"><small class="text-muted"><i class="fas fa-clock me-1"></i>5 jam yang lalu</small></p>
+                                <a href="/berita 2.html" class="btn btn-primary">Selengkapnya <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <i class="fas fa-search me-1"></i> Pencarian
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari berita...">
+                            <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <i class="fas fa-fire me-1"></i> Berita Populer
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="/berita 1.html" class="/berita 1.html">Berita Populer 1</a></li>
+                            <li class="mb-2"><a href="/berita 2.html" class="/berita 2.html">Berita Populer 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Tentang Kami</h5>
+                    <p>Portal berita terpercaya yang menyajikan informasi aktual dan faktual.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Hubungi Kami</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>info@newsportal.com</li>
+                        <li><i class="fas fa-phone me-2"></i>(021) 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 NewsPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
